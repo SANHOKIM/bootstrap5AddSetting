@@ -26,7 +26,43 @@
       h6 {
         margin-bottom: 0;
       }
+
+      li {
+        list-style: none;
+      }
+
+      .w-0 {
+        width: 0;
+        white-space: nowrap;
+      }
+      .z-up {
+        z-index: 9999;
+      }
     </style>
   </head>
-  <body></body>
+  <body>
+    <header
+      class="fixed-top bg-white py-4 container-fluid border-bottom d-flex justify-content-between align-items-center"
+    >
+      <h1 class="w-0 position-relative z-up">로고</h1>
+      <button class="d-lg-none">햄버거</button>
+      <div
+        class="navi d-lg-flex d-none flex-grow-1 bg-primary justify-content-between"
+      >
+        <ul
+          id="gnb"
+          class="d-lg-flex bg-warning flex-grow-1 justify-content-center"
+        >
+          <li>메뉴1</li>
+          <li>메뉴2</li>
+          <li>메뉴3</li>
+          <li>메뉴4</li>
+        </ul>
+        <ul id="sns" class="d-flex w-0 justify-content-lg-end">
+          <li>sns1</li>
+          <li>sns2</li>
+        </ul>
+      </div>
+    </header>
+  </body>
 </html>
